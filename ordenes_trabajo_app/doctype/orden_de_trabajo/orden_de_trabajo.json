@@ -1,0 +1,51 @@
+{
+  "doctype": "DocType",
+  "name": "Orden de Trabajo",
+  "module": "\u00d3rdenes Trabajo App",
+  "custom": 0,
+  "autoname": "naming_series:",
+  "naming_series": "TC.#####",
+  "fields": [
+    {
+      "fieldname": "titulo",
+      "fieldtype": "Data",
+      "label": "T\u00edtulo"
+    },
+    {
+      "fieldname": "descripcion",
+      "fieldtype": "Text",
+      "label": "Descripci\u00f3n"
+    },
+    {
+      "fieldname": "fecha_inicio",
+      "fieldtype": "Date",
+      "label": "Fecha de Inicio"
+    },
+    {
+      "fieldname": "fecha_fin",
+      "fieldtype": "Date",
+      "label": "Fecha de Fin"
+    },
+    {
+      "fieldname": "estado",
+      "fieldtype": "Select",
+      "label": "Estado",
+      "options": "Pendiente\nEn progreso\nFinalizada"
+    },
+    {
+      "fieldname": "responsable",
+      "fieldtype": "Link",
+      "label": "Responsable",
+      "options": "User"
+    },
+    {
+      "fieldname": "publicado",
+      "fieldtype": "Check",
+      "label": "Publicado"
+    }
+  ],
+  "has_web_view": 1,
+  "is_published_field": "publicado",
+  "web_view_title_field": "titulo",
+  "allow_guest_to_view": 1
+}
